@@ -50,13 +50,12 @@ a:active {color:#000000; font-weight: 500;}
 /* Title */
 .title {
 	text-align: center;
-	text-transform: uppercase;
 	font-family: 'Montserrat';
 	font-weight: 200;
 	font-size: 30px;
-	color: #969196;
-	letter-spacing: 1px;
-	padding-bottom: 20px;
+	color: #000000;
+	letter-spacing: -1px;
+	padding-bottom: 10px;
 }
 
 /* Description */
@@ -67,6 +66,7 @@ a:active {color:#000000; font-weight: 500;}
 	line-height: 2;
 	font-weight: 300;
 	font-size: 11px;
+	letter-spacing: -0.05px;
 	padding-bottom: 40px;
 }
 .description a:hover {
