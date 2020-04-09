@@ -25,6 +25,27 @@
 	<link rel="SHORTCUT ICON" href="Assets/favicon.ico">
   </head>
 	
+		<script>
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#button').fadeIn();
+    } else {
+        $('#button').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#button").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "fast");
+        return false;
+    });
+
+});
+</script>
+
+	<a id="button" title="Back to top" href="#">▲</a>
+	
 	<div class="container">
   <div class="row">
     <div class="col-sm-3">
@@ -47,35 +68,59 @@
 				 <div class="row no-gutters">
 			   
 		   <div class="col-12 col-sm-6">
+			   <div class="printbox">
 			   <img src="Assets/Type/Heart Of Gold thumbnail.jpg" width="100%"/>
+			   <div class="overlay"><a href="https://society6.com/product/heart-of-gold1854398_stretched-canvas" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div>
 		   
 		   <div class="col-12 col-sm-6">
+			   <div class="printbox">
 			   <img src="Assets/Type/Out The Sky thumbnail.jpg" width="100%"/>
+			   <div class="overlay"><a href="https://society6.com/product/out-the-sky_metal-print?" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div>
 					 
 			<div class="col-12 col-sm-6">
-			  <img src="Assets/Type/Patience thumbnail.jpg" width="100%"/>
+			   <div class="printbox">
+			   <img src="Assets/Type/Patience thumbnail.jpg" width="100%"/>
+			   <div class="overlay"><a href="https://society6.com/product/patience-is-a-virtue1854496_poster" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div>
 		   
 		   <div class="col-12 col-sm-6">
+			   <div class="printbox">
 			   <img src="Assets/Type/Ace In The Hole thumbnail.jpg" width="100%"/>
+			   <div class="overlay"><a href="https://society6.com/product/ace-in-the-hole2756329_metal-print" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div>
 					 
 			<div class="col-12 col-sm-6">
+				<div class="printbox">
 			  <img src="Assets/Type/Show Your True Colors thumbnail.jpg" width="100%"/>
+				<div class="overlay"><a href="https://society6.com/product/show-your-true-colors2756344_metal-print" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div>
 		   
 		   <div class="col-12 col-sm-6">
+			   <div class="printbox">
 			   <img src="Assets/Type/Set The Wheel In Motion thumbnail.jpg" width="100%"/>
+			   <div class="overlay"><a href="https://society6.com/product/set-the-wheel-in-motion_poster" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div> 
 		   
 		   <div class="col-12 col-sm-6">
+			   <div class="printbox">
 			   <img src="Assets/Type/Wine & Dine thumbnail.jpg" width="100%"/>
+			   <div class="overlay"><a href="https://society6.com/product/wine-dine2756354_metal-print" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div> 	 
 					 
 		   <div class="col-12 col-sm-6">
+			   <div class="printbox">
 			   <img src="Assets/Type/Sink Or Swim thumbnail.jpg" width="100%"/>
+			   <div class="overlay"><a href="https://society6.com/product/sink-or-swim2756362_stretched-canvas" target="_blank" class="buyicon"><i class="far fa-heart"></i></a></div>
+			   </div>
 		   </div> 	 
 					 
 				 </div>
