@@ -259,21 +259,13 @@ p {
 
 .return {
   position: absolute;
-  top: 30px;
-  right: 0px;
+  top: 16px;
+  right: 13px;
   height: 29px;
   width: 29px;
-  opacity: 0;
-  transition: .3s ease;
- 	  position: absolute;
-	  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  opacity: ;
   font-size: 16px;
 	 
-}
-
-.printbox:hover .return {
-  opacity: 1;
 }
 
 .fa {
