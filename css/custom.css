@@ -263,11 +263,20 @@ p {
   right: 13px;
   height: 29px;
   width: 29px;
-  opacity: ;
+  opacity: 1;
   font-size: 16px;
-	 
 }
-
+.plus {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  opacity: 0;
+  font-size: 12px;
+  transition: .3s ease;
+}
+.box:hover .plus {
+  opacity: 1;
+}
 .fa {
     color: white;
 }
