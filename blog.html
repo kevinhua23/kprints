@@ -25,7 +25,7 @@
 	<link rel="SHORTCUT ICON" href="Assets/favicon.ico">
   </head>
 	
-		<script>
+<script>
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
@@ -36,11 +36,23 @@ $(window).scroll(function() {
 });
 $(document).ready(function() {
     $("#button").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "normal");
+        var width = $(window).width();  
+		if (width > 576) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "normal");            
+        }
         return false;
     });
-
+});
+$(document).ready(function() {
+    $("#button").click(function(event) {
+        var width = $(window).width();  
+		if (width < 576) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 260 }, "normal");            
+        }
+        return false;
+    });
 });
 </script>
 
@@ -148,7 +160,7 @@ $(document).ready(function() {
   </a>
 </div>
 				 
-			<br><br><br><hr>
+			<br><br><hr>
 			
 <!--					<div class="title"><br>Lost In Translation | Pixel 4</div>
 				 <center><div class="description"><font color="black">11.10.19</font><br><br>Our trip to Tokyo, Osaka, & Kyoto.</div>
@@ -203,7 +215,7 @@ $(document).ready(function() {
     <span class="sr-only">Next</span>
   </a>
 </div>
-			<br><br><br><br>
+			<br><br>
 				 
 			<hr>
 <!--			 <div class="title"><br>Dreams Interlinked (SUPERCUT)</div>
@@ -295,12 +307,12 @@ $(document).ready(function() {
   </a>
 </div>
 
-			<br><br><br><hr><br><br><br><br>
+			<br><br><hr><br><br><br>
 
 			   <div class="d-sm-none">
 				   <div class="contact"><a href="https://www.instagram.com/kprince_"><i class="fab fa-instagram"></i></a> <a href="mailto:kevinhua23@gmail.com"><i class="fas fa-envelope"></i></a></div>
 			   </div>
-		   <p>© 2020 KPRINTS.CA</p></center><br>
+		   <p>© 2020 KPRINTS.CA</p></center><br><br><br>
 	  </div>
 	  
 		</div>

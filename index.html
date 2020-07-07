@@ -36,13 +36,25 @@ $(window).scroll(function() {
 });
 $(document).ready(function() {
     $("#button").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "normal");
+        var width = $(window).width();  
+		if (width > 576) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "normal");            
+        }
         return false;
     });
-
 });
-
+$(document).ready(function() {
+    $("#button").click(function(event) {
+        var width = $(window).width();  
+		if (width < 576) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 260 }, "normal");            
+        }
+        return false;
+    });
+});
+			
 $(document).ready(function() {
     $("#GalleryPage").click(function(event) {
         var width = $(window).width();        

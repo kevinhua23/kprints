@@ -36,11 +36,23 @@ $(window).scroll(function() {
 });
 $(document).ready(function() {
     $("#button").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "normal");
+        var width = $(window).width();  
+		if (width > 576) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "normal");            
+        }
         return false;
     });
-
+});
+$(document).ready(function() {
+    $("#button").click(function(event) {
+        var width = $(window).width();  
+		if (width < 576) {
+            event.preventDefault();
+            $("html, body").animate({ scrollTop: 260 }, "normal");            
+        }
+        return false;
+    });
 });
 </script>
 
@@ -62,10 +74,10 @@ $(document).ready(function() {
 		
 		 </div>
 	  
-	   <div class="col-sm-9"><div class="title"><img src="Assets/me.jpg" width="100%">
-		   <br><br>
-		  Hi I'm Kevin,</div>
-		   <center><div class="description">A minimalist/designer from Toronto currently working on lifestyle multimedia projects. As a dreamer, I love incorporating abstract thoughts and ideas into our everyday lives through design prints, videos or photography.<br><br>Say hello: <br><font style="font-weight:600;" color="black"><a href="mailto:kevinhua23@gmail.com">kevinhua23@gmail.com <i class="fas fa-share"></i></a></font></div>
+	   <div class="col-sm-9"><img src="Assets/me.jpg" width="100%">
+		   <br><br><br><br><br>
+		  <div class="title">Hi I'm Kevin,</div>
+		   <center><div class="description">A minimalist/designer from Toronto currently working on lifestyle multimedia projects. As a dreamer, I love incorporating abstract thoughts and ideas into our everyday lives through design prints, videos or photography.<br><br>Say hello: <br><font style="font-weight:600;" color="black"><a href="mailto:kevinhua23@gmail.com">kevinhua23@gmail.com <i class="fas fa-share"></i></a></font></div><br><br><br><br>
 		   
 			   <hr>
 <br><br><br>
@@ -73,7 +85,7 @@ $(document).ready(function() {
 			   <div class="d-sm-none">
 				   <div class="contact"><a href="https://www.instagram.com/kprince_"><i class="fab fa-instagram"></i></a> <a href="mailto:kevinhua23@gmail.com"><i class="fas fa-envelope"></i></a></div>
 			   </div>
-		   <p>© 2020 KPRINTS.CA</p></center><br>
+		   <p>© 2020 KPRINTS.CA</p></center><br><br><br>
 	  </div>
 	  
 		</div>
