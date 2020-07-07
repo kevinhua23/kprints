@@ -42,6 +42,15 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function() {
+    $("#GalleryPage").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "normal");
+        return false;
+    });
+
+});
 			
 function show(shown, hidden) {
   document.getElementById(shown).style.display='block';
