@@ -1,8 +1,7 @@
 /* Text */
 body {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 10px;
-	letter-spacing: 1px;
+	font-size: 11px;
 	color:#969196;
 	/* Fade In */
 	opacity: 1;
@@ -34,7 +33,7 @@ a:active {color:#000000;}
 
 /* Nav */
 .nav-link {
-	text-transform: uppercase;
+	text-transform: uppercase; 
 	letter-spacing: 1px;
 	padding-bottom: 40px;
 }
@@ -64,10 +63,11 @@ a:active {color:#000000;}
 .contact {
 	font-size: 15px;
 	text-align: center;
-	letter-spacing: 10px;
+	/* letter-spacing: 10px; */
 	padding-top: 10px;
 	padding-bottom: 40px;
 }
+.contact a:link {color:#000000;}
 
 /* Title */
 .title {
@@ -90,7 +90,7 @@ a:active {color:#000000;}
 	letter-spacing: -1px;
 	line-height: 1;
 	background-color: #c8c0c8;
-  	padding: 30px;
+  	padding: 35px;
 	margin-left: 50px;
 	margin-right: 50px;
 }
