@@ -80,6 +80,20 @@ a:active {color:#000000;}
 	padding-bottom: 10px;
 }
 
+/* Title Box*/
+.title-box {
+	text-align: center;
+	font-family: 'Montserrat';
+	font-weight: 200;
+	font-size: 30px;
+	color: #FFFFFF;
+	letter-spacing: -1px;
+	background-color: #c8c0c8;
+  	padding: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
 /* Description */
 .description {
 	max-width: 90%;
